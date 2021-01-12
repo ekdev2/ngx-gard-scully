@@ -20,13 +20,12 @@ class DiseaseListing {
 
   getRouting(): string[] {
     if (this.UrlOtherName) {
-      // return ['/diseases', this.UrlBase, 'OtherNames', this.UrlOtherName]; // too many pages to render right now
-      return ['/diseases', this.UrlBase, 'OtherNames'];
+      return ['/diseases', this.UrlBase, 'OtherNames', this.UrlOtherName]; // too many pages to render right now
+      // return ['/diseases', this.UrlBase, 'OtherNames'];
     } else {
       return ['/diseases', this.UrlBase];
     }
   }
-
 }
 
 @Component({
